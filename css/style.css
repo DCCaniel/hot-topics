@@ -1,0 +1,119 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Playfair+Display&display=swap');
+/* Colours */
+/*
+Links: rgb(100,100,250);
+Main Text: #333;
+Tertiary: #fff;
+/*
+/* Body */
+body {
+	background-image: url(../img/bg.jpg);
+	background-size: auto;
+	background-repeat: repeat;
+	background-position: 0 -800px ;
+	font-family: 'Ibarra Real Nova', serif;
+	font-size: 1rem;
+	color: #333;
+	line-height: 1.6;
+}
+/* Links */
+a {
+	color: rgb(100,100,250);
+	text-decoration-style: none;
+	text-decoration: none;
+}
+/* Headings */
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+}
+h1 {
+	color: #333;
+	text-align: center;
+	font-size: 4rem;
+}
+.masthead ul {
+	padding-left: 0;
+	margin-left: 0;
+}
+.masthead ul li {
+	font-size: 3rem;
+	text-align: center;
+	list-style: none;
+}
+/* P */
+p {
+	padding: 10px 30px;
+	font-size: 0.75rem;
+}
+footer {
+	text-align: right;
+	font-size: .75rem;
+}
+.icons i {
+	font-size: 50px;
+}
+.icons a i {
+	color: #333;
+}
+/* Wrapper */
+.wrapper {
+	width: 100%;
+}
+
+.grid {
+	display: flex;
+	width: 100%;
+	flex-direction: column;	
+	align-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.card {
+	text-align: center;
+	margin: auto;
+}
+.thumb {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+@media (min-width: 760px) {
+	body {
+	background-size: auto;
+	background-position: 0 -1000px;
+	}
+	.icons i {
+		font-size: 50px;
+	}
+	.masthead ul li {
+		float: left;
+	font-size: 4rem;
+	text-align: center;
+	padding: 0px;
+	width: 50%;
+	}
+	.wrapper {
+	width: 80%;
+	}
+	h1 {
+		font-size: 5rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.grid {
+		flex-direction: row;
+	}
+}
+@media (min-width: 1200px) {
+	.wrapper {
+	width: 70%;
+	}
+	h1 {
+		font-size: 6rem;
+	}
+	p {
+		font-size: 1.25rem;
+	}
+}
